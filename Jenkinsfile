@@ -5,7 +5,7 @@ pipeline{
 		stage ('clone'){
 		
 			steps{
-				withMaven(maven : maven){
+				
 				git 'https://github.com/vatsalkumarr/MavenDemoRepo.git'
 				 
 				}
@@ -15,7 +15,7 @@ pipeline{
 		stage ('compile'){
 		
 			steps{
-				withMaven(maven : maven){
+				withMaven(maven : maven-3.3.9){
 				 sh 'mvn clean install'
 				}
 			}
