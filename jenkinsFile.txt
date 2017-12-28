@@ -4,6 +4,7 @@ pipeline{
 		
 			steps{
 				withMaven(maven : maven){
+				git 'https://github.com/vatsalkumarr/MavenDemoRepo.git'
 				 sh 'mvn clean install'
 				}
 			}
