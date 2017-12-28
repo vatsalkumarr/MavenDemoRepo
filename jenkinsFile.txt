@@ -1,0 +1,13 @@
+pipeline{
+	stages{
+		stage ('compile'){
+		
+			steps{
+				withMaven(maven : maven){
+				 sh 'mvn clean install'
+				}
+			}
+		
+		}
+	}
+}
