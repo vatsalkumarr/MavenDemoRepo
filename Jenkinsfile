@@ -5,13 +5,11 @@ pipeline{
 		stage ('clone'){
 		
 			steps{
-				
 				git 'https://github.com/vatsalkumarr/MavenDemoRepo.git'
-				 
 				}
 			}
 		
-		}
+		
 		stage ('compile'){
 		
 			steps{
@@ -21,5 +19,5 @@ pipeline{
 			}
 		
 		}
-	}
+	
 }
