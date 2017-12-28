@@ -7,7 +7,7 @@ pipeline{
 			steps{
 				git 'https://github.com/vatsalkumarr/MavenDemoRepo.git'
 				}
-			}
+		}
 		
 		
 		stage ('compile'){
@@ -19,5 +19,7 @@ pipeline{
 			}
 		
 		}
+		}
+		}
 	
-}
+
