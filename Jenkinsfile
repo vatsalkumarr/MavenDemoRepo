@@ -14,9 +14,9 @@ pipeline{
 		
 			steps{
 				
-				withMaven(maven : maven-3.3.9){
-				 sh 'mvn clean install'
-				}
+				
+				 bat 'mvn clean install'
+				
 			}
 		
 		}
